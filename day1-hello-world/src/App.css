@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,6 @@ body {
   width: 100%;
 }
 
-/* Your existing styles */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -54,7 +53,6 @@ body {
   color: #888;
 }
 
-/* Your custom styles */
 ul {
   list-style: none;
   padding: 0;
