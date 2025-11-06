@@ -1,0 +1,189 @@
+.mastery-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.mastery-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.level-display h2 {
+  font-size: 3rem;
+  margin: 0;
+  background: linear-gradient(45deg, #ffd700, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.xp-container {
+  background: rgba(0,0,0,0.3);
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.dojo-section {
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.challenges-grid, .powers-grid, .notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.challenge-card, .power-card, .note-card {
+  background: rgba(255,255,255,0.15);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: all 0.3s ease;
+}
+
+.challenge-card:hover, .power-card:hover, .note-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.2);
+}
+
+.challenge-btn, .power-btn, .api-btn, .node-btn {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.challenge-btn:hover:not(:disabled), 
+.power-btn:hover:not(:disabled),
+.api-btn:hover:not(:disabled),
+.node-btn:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.challenge-btn:disabled, .power-btn:disabled, .api-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.completed-badge {
+  background: linear-gradient(45deg, #48bb78, #38a169);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.power-effect {
+  background: rgba(255,255,255,0.2);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+.teleport {
+  background: linear-gradient(45deg, #ff6b6b, #ffd700);
+}
+
+.invisibility {
+  background: linear-gradient(45deg, #667eea, #48bb78);
+}
+
+.api-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.api-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.user-card, .post-card {
+  background: rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+.performance-demo {
+  text-align: center;
+}
+
+.virtual-dom-visual {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.dom-node {
+  background: rgba(255,255,255,0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.render-stats {
+  background: rgba(0,0,0,0.3);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.master-badge {
+  background: linear-gradient(45deg, #ffd700, #ff6b6b);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px gold; }
+  50% { box-shadow: 0 0 40px gold; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mastery-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .challenges-grid, .powers-grid, .notes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .api-controls {
+    flex-direction: column;
+  }
+}
