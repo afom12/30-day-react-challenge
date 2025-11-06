@@ -1,10 +1,7 @@
-# 30-Day React Challenge 🚀
+## 📅 Progress Tracker
 
-## Progress Log
-- [x] **Day 1**: Hello World app, GitHub setup
-- [ ] Day 2: JSX and dynamic data
-- [ ] Day 3: Components and props
-...
-
-## Projects
-- [Day 1: Hello World](day1-hello-world)
+### Week 1 - React Basics
+- [x] **Day 1**: Hello World App + GitHub Setup
+- [x] **Day 2**: JSX Syntax + Dynamic Data Display
+- [ ] Day 3: Components and Props
+- [ ] Day 4: State and Events
