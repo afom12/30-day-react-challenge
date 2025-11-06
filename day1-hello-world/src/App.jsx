@@ -3,13 +3,13 @@ import './App.css'
 
 function App() {
   const [user] = useState({
-    name: "Alex",
+    name: "Afomiya",
     age: 25,     
     favoriteColor: "blue",
     hobbies: ["coding", "reading", "gaming"],
     isDeveloper: true,
-    email: "your@email.com",
-    location: "Your City", 
+    email: "afomiyaketsella12@email.com",
+    location: "Woldia", 
     skills: ["JavaScript", "React", "CSS"],
     currentYear: new Date().getFullYear()
   })
@@ -34,7 +34,7 @@ function App() {
       <p>Welcome to my Day 2 React project!</p>
       
       <h2>About Me</h2>
-      <p>I am <strong>{user.age}</strong> years old {user.age >= 18 ? '(adult)' : '(minor)'}</p>
+      <p>I am <strong>{user.age}</strong> years old {user.age >= 23 ? '(adult)' : '(minor)'}</p>
       
       <p>My favorite color is <span style={colorStyle}>{user.favoriteColor}</span></p>
       
