@@ -1,0 +1,84 @@
+.playground-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.experiment-section {
+  background: white;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #667eea;
+}
+
+.experiment-section h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+}
+
+.expression-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.expression-card {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.expression-card h3 {
+  margin-top: 0;
+  color: #495057;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fun-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.fun-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.advanced-experiments {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.advanced-experiments h3 {
+  color: #856404;
+  margin-top: 0;
+}
+
+/* Cool animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.experiment-section {
+  animation: fadeIn 0.5s ease-out;
+}
